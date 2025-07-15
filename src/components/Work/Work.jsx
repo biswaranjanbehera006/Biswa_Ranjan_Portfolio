@@ -78,6 +78,14 @@ const Work = () => {
             >
               Show Project
             </a>
+             <a
+              href={project.codegit}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-purple-600 hover:bg-purple-800 text-white px-6 py-2 rounded-xl text-sm font-semibold transition  ml-4"
+            >
+              CODE
+            </a>
           </div>
         </div>
       </div>

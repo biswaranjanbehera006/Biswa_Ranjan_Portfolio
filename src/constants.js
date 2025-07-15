@@ -324,6 +324,7 @@ export const myproject = [
     image: beauty,
     tags: ["HTML", "CSS", "JavaScript"],
     webapp: "https://visageqlith.netlify.app/",
+     codegit: "https://github.com/biswaranjanbehera006/MERN02M002/tree/main/june/week1/Day3/Beauty-Palour-website",
 
   },
   {
@@ -333,6 +334,7 @@ export const myproject = [
     image: samsunglogo,
     tags: ["HTML", "CSS", "JavaScript", "Tailwind"],
     webapp: "https://samsung-clone-qlith.netlify.app/",
+    codegit: "https://github.com/biswaranjanbehera006/Qlith-Samsung-Website-clone",
 
   }
 

@@ -5,19 +5,21 @@ const About = () => {
   return (
     <section
       id="about"
-      className="pt-0 pb-20 px-[6vw] lg:px-[15vw] font-sans text-white bg-[#050414] bg-gradient-to-br from-[#050414] via-[#0d0727] to-[#1a0a36] overflow-hidden"
+      className="pt-10 pb-20 px-[7vw] lg:px-[10vw] font-sans text-white bg-[#050414] bg-gradient-to-br from-[#050414] via-[#0d0727] to-[#1a0a36] overflow-hidden"
     >
-      <div className="flex flex-col-reverse md:flex-row items-center gap-12">
-        {/* Left: Developer Info (Card-style) */}
-        <div className="md:w-1/2 mt-10 bg-[#0f0f23] border border-white/10 rounded-xl shadow-xl text-sm text-left font-mono p-5 md:p-8 relative overflow-hidden">
-          {/* Window dots */}
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20">
+        
+        {/* Left: Developer Info */}
+        <div className="w-full lg:w-1/2 mt-8 lg:mt-0 bg-[#0f0f23] border border-purple-700 rounded-xl shadow-xl text-sm font-mono p-5 md:p-8 transition-transform duration-500 hover:scale-105">
+          
+          {/* Window Dots */}
           <div className="flex items-center space-x-2 mb-4">
             <span className="w-3 h-3 rounded-full bg-red-500"></span>
             <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
             <span className="w-3 h-3 rounded-full bg-green-500"></span>
           </div>
 
-          {/* Code-style text */}
+          {/* Code Style Text */}
           <pre className="whitespace-pre-wrap text-gray-300 text-sm leading-relaxed">
 <span className="text-pink-400">const</span> <span className="text-white">developer</span> = <span className="text-purple-400">{`{`}</span>
   <span className="text-green-400">name</span>: <span className="text-yellow-400">"Biswa Ranjan Behera"</span>,
@@ -37,7 +39,7 @@ const About = () => {
 <span className="text-purple-400">{`}`}</span>
           </pre>
 
-          {/* Download CV Button */}
+          {/* Download CV */}
           <div className="mt-6">
             <a
               href="https://drive.google.com/file/d/1FdfM7LNw_r9zyiI1j30N62ja9tf-dDzS/view?usp=sharing"
@@ -50,14 +52,15 @@ const About = () => {
           </div>
         </div>
 
-        {/* Right: Profile Image */}
-        <div className="md:w-1/2 flex justify-center md:justify-end mt-10">
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[26rem] md:h-[26rem] rounded-full overflow-hidden border-4 border-purple-600 shadow-xl hover:scale-105 transition-transform duration-500">
+        {/* Right: Image */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-purple-600 shadow-xl hover:scale-105 transition-transform duration-500">
             <img
               src={profileImageabout}
               alt="Biswa Ranjan Behera"
               className="w-full h-full object-cover rounded-full"
             />
+            {/* Blur Glow Effect */}
             <div className="absolute inset-0 rounded-full bg-purple-600 opacity-10 blur-2xl"></div>
           </div>
         </div>

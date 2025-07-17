@@ -320,7 +320,7 @@ export const myproject = [
   {
     id: 0,
     title: "Beauty Parlour Website",
-    description: "Developed a stunning static website for a beauty parlour using HTML, CSS, and JavaScript. The website features a captivating design, showcasing various services, an informative about section, and a user-friendly contact form, providing an engaging experience for clients.",
+    description: "Created a static website for a beauty parlour using HTML, CSS, and JavaScript, completed within 2 days. It includes a beautiful design with service showcases, an informative about section, and an interactive contact form, ensuring a smooth and engaging user experience for clients seeking services or information about the parlour.",
     image: beauty,
     tags: ["HTML", "CSS", "JavaScript"],
     webapp: "https://visageqlith.netlify.app/",
@@ -330,7 +330,7 @@ export const myproject = [
   {
     id: 1,
     title: "Samsung India Clone",
-    description: "Built a responsive clone of the Samsung India homepage using HTML, CSS, JavaScript, and Tailwind. The project features a dynamic navigation bar, sleek sliders, interactive product cards, and a robust media layout, closely matching the original site.",
+    description: "Built a responsive clone of the Samsung India homepage using HTML, CSS, JavaScript, Tailwind, and local storage. Completed in 3 days as a group collaboration project where I served as team leader, featuring a dynamic navigation bar, sleek sliders, interactive product cards, and a robust media layout closely matching the original site.",
     image: samsunglogo,
     tags: ["HTML", "CSS", "JavaScript", "Tailwind"],
     webapp: "https://samsung-clone-qlith.netlify.app/",
@@ -347,8 +347,8 @@ export const myeducation= [
     school: "GIFT AUTONOMOUS BHUBANESWR",
     date: "2024 - 2026",
     grade: "Continue",
-    desc: "I am currently pursuing my Master’s degree (MCA) in Computer Applications at GIFT Autonomous College, Bhubaneswar, with an expected graduation in 2026. My coursework includes core subjects like Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. Through hands-on projects, coding assignments, and participation in technical workshops, I am continuously building a strong foundation in programming and software development. My academic journey at GIFT is actively shaping my technical proficiency and preparing me for a successful career in the IT industry.",
-    degree: "Master of Computer Applications - MCA",
+    desc: "I am pursuing my Master’s in Computer Applications (MCA) at GIFT Autonomous College, Bhubaneswar, graduating in 2026. My studies include Data Structures, Algorithms, OOP, DBMS, Web Development, and Software Engineering. I’m enhancing my skills through practical projects, coding assignments, and workshops, preparing for a successful IT career.",
+    degree: "Master’s in Computer Applications",
   },
   {
     id: 1,
@@ -356,7 +356,7 @@ export const myeducation= [
     school: "NEW STAR DEGREE COLLEGE KHORDHA",
     date: "2021 - 2024",
     grade: "9.10 CGPA",
-    desc: "I have completed my Bachelor’s degree (B.Sc.) in Computer Science from New Star Degree College, Khordha, graduating with an A+ distinction. During my undergraduate studies, I developed a solid understanding of fundamental computer science concepts, including programming, data structures, operating systems, and database management. My academic performance, combined with practical projects and active participation in college-level technical events, laid a strong foundation for my advanced studies and further fueled my interest in the field of software development and technology.",
+    desc: "I completed my Bachelor’s degree (B.Sc.) in Computer Science from New Star Degree College, Khordha, with A+ distinction. My studies covered programming, data structures, operating systems, and databases. Practical projects and active participation in technical events built a strong foundation for advanced studies and deepened my interest in software development.",
     degree: "Bachelor of Science in Computer Science",
   },
 {
@@ -365,7 +365,7 @@ export const myeducation= [
     school: "NEW STAR SCIENCE H S SCHOOL KHORDHA",
     date: "2018 - 2021",
     grade: "54.66 Percentage",
-    desc: "I have completed my Intermediate (12th) education in the Science stream from New Star Science Higher Secondary School, Khordha. My subjects included Physics, Chemistry, Mathematics, English, Information Technology, and Odia. This academic phase helped me build a strong analytical and problem-solving mindset, especially through core science and technology subjects. It laid the groundwork for my interest in computer science and prepared me for higher education in the field of technology.",
+    desc: "I completed my Intermediate (12th) in Science from New Star Science Higher Secondary School, Khordha, with subjects like Physics, Chemistry, Mathematics, IT, English, and Odia. This phase strengthened my analytical and problem-solving skills, fostering interest in computer science and building a solid foundation for pursuing higher education in technology.",
     degree: "Higher Secondary Education (12th Grade) in Science",
   },
 {
@@ -374,7 +374,7 @@ export const myeducation= [
     school: "DEBAGURU ADARSHA BIDYALAYA",
     date: "2017 - 2018",
     grade: "75.33 Percentage",
-    desc: "I have completed my Matriculation (10th grade) from Debaguru Adarsha Bidyalaya. During this foundational stage of my education, I gained essential knowledge across core subjects and developed discipline, curiosity, and a strong academic mindset. My experience in school played a crucial role in shaping my interest in science and technology, setting the stage for my future academic journey in the field of computer science.",
+    desc: "I completed my Matriculation (10th grade) from Debaguru Adarsha Bidyalaya. This foundational stage provided essential knowledge in core subjects and helped develop discipline, curiosity, and a strong academic mindset. My school experience significantly influenced my interest in science and technology, setting the groundwork for pursuing further studies in computer science.",
     degree: "Matriculation (10th grade)",
   }
 ]

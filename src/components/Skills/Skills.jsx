@@ -1,4 +1,3 @@
-// src/components/Skills/Skills.jsx
 import React from "react";
 import { SkillsInfo } from "../../constants";
 import Tilt from "react-parallax-tilt";
@@ -17,12 +16,12 @@ const Skills = () => (
     </p>
   </div>
 
-  {/* Code Window Style Skill Display - 2 by 2 layout */}
+  {/* Code Window Style Skill Display */}
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
     {SkillsInfo.map((category, index) => (
       <div
         key={index}
-        className="bg-[#0f0f23] border border-white/10 rounded-xl shadow-xl p-5 md:p-6 text-sm sm:text-base w-full relative"
+        className="bg-[#0f0f23] border border-purple-700 rounded-xl shadow-xl p-5 md:p-6 text-sm sm:text-base w-full relative hover:scale-105 transition-transform duration-500"
       >
         {/* Apple-style Dots */}
         <div className="flex items-center space-x-2 mb-4">
@@ -32,13 +31,13 @@ const Skills = () => (
         </div>
 
         <pre className="whitespace-pre-wrap text-gray-300 text-left overflow-x-auto">
-<span className="text-pink-400">const</span> <span className="text-white">{category.title.toLowerCase()}</span> = [
+<span className="text-pink-400">const</span> <span className="text-white">{category.title.toLowerCase()}</span> = [<br />
   {category.skills.map((skill, i) => (
     <span key={i} className="inline-flex items-center gap-2 mr-3 my-1">
       <img src={skill.logo} alt={skill.name} className="w-5 h-5 inline-block" />
       <span className="text-yellow-400">"{skill.name}"</span>{i < category.skills.length - 1 ? ',' : ''}
     </span>
-  ))}
+  ))}<br />
 ];
         </pre>
       </div>

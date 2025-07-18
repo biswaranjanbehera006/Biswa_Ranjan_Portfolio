@@ -15,6 +15,30 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Active Section Detection with Intersection Observer
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Trigger when 50% visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
   const handleMenuItemClick = (sectionId) => {
     setActiveSection(sectionId);
     setIsOpen(false);
@@ -56,7 +80,7 @@ const Navbar = () => {
             <li
               key={item.id}
               className={`cursor-pointer hover:text-[#8245ec] transition ${
-                activeSection === item.id ? "text-[#8245ec]" : ""
+                activeSection === item.id ? "text-[#8245ec] font-semibold" : ""
               }`}
             >
               <button onClick={() => handleMenuItemClick(item.id)}>
@@ -86,7 +110,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Hamburger Icon - Tablet and Mobile */}
+        {/* Hamburger Icon */}
         <div className="lg:hidden">
           {isOpen ? (
             <FiX
@@ -110,7 +134,7 @@ const Navbar = () => {
               <li
                 key={item.id}
                 className={`cursor-pointer hover:text-[#8245ec] transition ${
-                  activeSection === item.id ? "text-[#8245ec]" : ""
+                  activeSection === item.id ? "text-[#8245ec] font-semibold" : ""
                 }`}
               >
                 <button onClick={() => handleMenuItemClick(item.id)}>

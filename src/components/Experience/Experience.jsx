@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="pt-1 pb-16 px-[7vw] md:px-[10vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="pt-1 pb-16 px-[7vw] lg:px-[10vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/* Section Title */}
       <div className="text-center mb-10">
@@ -13,17 +13,17 @@ const Experience = () => {
           <span className="block h-[3px] bg-purple-500 mt-2 mx-auto w-[90%] md:w-full rounded-full"></span>
         </h2>
 
-        {/* Text limited to card width */}
-        <div className="max-w-4xl mx-auto px-4">
+        {/* ✅ Text aligned with section width */}
+        <div className="px-0">
           <p className="text-gray-400 mt-3 text-lg font-semibold text-center">
             My internship experience as a MERN Stack Developer at Qlith Innovation Pvt. Ltd.
           </p>
         </div>
       </div>
 
-      {/* Experience Code Block */}
-      <div className="flex justify-center items-center">
-        <div className="relative bg-[#0d0c1d] text-white font-mono text-sm md:text-base rounded-xl p-5 sm:p-6 md:p-8 shadow-xl w-full max-w-4xl border border-purple-700 overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+      {/* ✅ Code Block aligned with navbar width */}
+      <div className="w-full">
+        <div className="relative bg-[#0d0c1d] text-white font-mono text-sm md:text-base rounded-xl p-5 sm:p-6 md:p-8 shadow-xl w-full border border-purple-700 overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
           
           {/* Fake window buttons */}
           <div className="flex space-x-2 absolute top-4 left-4">
@@ -64,6 +64,7 @@ const Experience = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-2 py-2 px-6 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white text-sm font-bold transition-transform hover:scale-105 shadow-[0_0_10px_rgba(130,69,236,0.4)]"
+            
             >
               Download Internship Certificate
             </a>

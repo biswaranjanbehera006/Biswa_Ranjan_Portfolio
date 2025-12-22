@@ -60,7 +60,7 @@ const Experience = () => {
           {/* Download Button */}
           <div className="mt-6 text-center">
             <a
-              href="https://drive.google.com/file/d/1gYB8jiWoaxA44ZBSl6kHC5Pbuc-CyjoH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Nbt_5aJwfCBbI3VSlJGcQm9Y5c8QnPkJ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-2 py-2 px-6 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white text-sm font-bold transition-transform hover:scale-105 shadow-[0_0_10px_rgba(130,69,236,0.4)]"

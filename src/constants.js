@@ -60,6 +60,8 @@ import imagesearchLogo from './assets/work_logo/image_search.png';
 import removebgLogo from './assets/work_logo/remove_bg.png';
 import samsunglogo from './assets/work_logo/samsung_INDIA.png'
 import beauty from './assets/work_logo/beauttiPalour.png'
+import flight from './assets/work_logo/Flightbooking.png'
+import carrent from './assets/work_logo/Carrent.png'
 
 
 export const SkillsInfo = [
@@ -321,6 +323,26 @@ export const projects = [
 export const myproject = [
   {
     id: 0,
+    title: "flight Booking System",
+    description: "Full-stack Flight Booking System completed in 4 days as a group project, where I led the team. The platform includes user authentication, flight search, seat selection, booking management, downloadable e-tickets/boarding passes, responsive UI screens, and an admin panel for managing users, flights, and bookings—all implemented with clean structure and collaborative development.",
+    image: flight,
+    tags: ["React.js", "Node.js", "Tailwind", "MongoDB", "Express.js"],
+    webapp: "https://flyonix.vercel.app/",
+    codegit: "https://github.com/biswaranjanbehera006/Qlith-Flight-Booking",
+
+  },
+  {
+    id: 1,
+    title: "Car Rental System",
+    description: "Full-stack Car Rental System featuring user authentication, car listings, availability search, rental booking management, return status tracking, automated email notifications, responsive UI screens, intuitive workflows, and an admin panel for managing users, cars, and bookings — developed with a clean structure and effective collaboration.",
+    image: carrent,
+    tags: ["React.js", "Node.js", "Tailwind", "MongoDB", "Express.js"],
+    webapp: "https://chalo-car.vercel.app/",
+    codegit: "https://github.com/biswaranjanbehera006/ChaloCar",
+
+  },
+  {
+    id: 2,
     title: "Beauty Parlour Website",
     description: "Created a static website for a beauty parlour using HTML, CSS, and JavaScript, completed within 2 days. It includes a beautiful design with service showcases, an informative about section, and an interactive contact form, ensuring a smooth and engaging user experience for clients seeking services or information about the parlour.",
     image: beauty,
@@ -330,7 +352,7 @@ export const myproject = [
 
   },
   {
-    id: 1,
+    id: 3,
     title: "Samsung India Clone",
     description: "Built a responsive clone of the Samsung India homepage using HTML, CSS, JavaScript, Tailwind, and local storage. Completed in 3 days as a group collaboration project where I served as team leader, featuring a dynamic navigation bar, sleek sliders, interactive product cards, and a robust media layout closely matching the original site.",
     image: samsunglogo,

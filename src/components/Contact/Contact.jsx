@@ -7,9 +7,12 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
+  const [loading, setLoading] = useState(false); // ✅ loader state
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true); // start loader
+
     emailjs
       .sendForm(
         "service_9bo1u4p",
@@ -19,6 +22,7 @@ const Contact = () => {
       )
       .then(() => {
         setIsSent(true);
+        setLoading(false); // stop loader
         form.current.reset();
         toast.success("Message sent successfully! ✅", {
           position: "top-right",
@@ -28,6 +32,7 @@ const Contact = () => {
       })
       .catch((error) => {
         console.error("Error sending message:", error);
+        setLoading(false); // stop loader
         toast.error("Failed to send message. Please try again.", {
           position: "top-right",
           autoClose: 3000,
@@ -65,7 +70,6 @@ const Contact = () => {
             <span className="w-3 h-3 rounded-full bg-green-500"></span>
           </div>
 
-          {/* ✅ Added break-words for email */}
           <pre className="whitespace-pre-wrap break-words text-gray-300 font-mono text-base leading-normal flex-1 mt-10">
 <span className="text-pink-400">const</span> <span className="text-white">developer</span> = <span className="text-purple-400">{`{`}</span>
 {`\n  `}
@@ -150,11 +154,21 @@ const Contact = () => {
               className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
             ></textarea>
 
+            {/* ✅ Button with Loader */}
             <button
               type="submit"
-              className="inline-block py-2 px-6 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white text-sm font-bold transition-transform hover:scale-105 shadow-[0_0_10px_rgba(130,69,236,0.4)]"
+              disabled={loading}
+              className={`inline-flex items-center justify-center gap-2 py-2 px-6 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white text-sm font-bold transition-transform shadow-[0_0_10px_rgba(130,69,236,0.4)]
+              ${loading ? "opacity-70 cursor-not-allowed" : "hover:scale-105"}`}
             >
-              Send Message 🚀
+              {loading ? (
+                <>
+                  <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                  Sending...
+                </>
+              ) : (
+                "Send Message 🚀"
+              )}
             </button>
           </form>
         </div>

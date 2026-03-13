@@ -42,7 +42,7 @@ const About = () => {
           {/* Download CV */}
           <div className="mt-6">
             <a
-              href="https://drive.google.com/file/d/1FdfM7LNw_r9zyiI1j30N62ja9tf-dDzS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1RUBESdKwqUrrfK6P74rxWqN0Zd2myyvp/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-2 py-2 px-6 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white text-sm font-bold transition-transform hover:scale-105 shadow-[0_0_10px_rgba(130,69,236,0.4)]"
